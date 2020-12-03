@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  background: url("images/bg-pattern-top.svg") no-repeat -25vw -81vh, url("images/bg-pattern-bottom.svg") no-repeat 50vw 40vh;
+  background-color: #19a2ae;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 375px) {
+  body {
+    background: url("images/bg-pattern-top.svg") no-repeat -80px -80px, url("images/bg-pattern-bottom.svg") no-repeat 50vw 60vh;
+    background-size: 70%, 70%;
+    background-color: #19a2ae;
+  }
+}
+
+.card {
+  border-radius: 10px;
+  width: 350px;
+  height: 350px;
+  background-color: white;
+}
+
+.card .head {
+  background: url("images/bg-pattern-card.svg") no-repeat;
+  border-radius: 10px 10px 0 0;
+  height: 140px;
+}
+
+.card .head .img {
+  position: relative;
+  bottom: -85px;
+  left: 34%;
+}
+
+.card .head .img img {
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.card .body-card {
+  min-height: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card .body-card .name {
+  margin-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 81px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.card .body-card .name h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card .body-card .name h2 strong {
+  color: #969696;
+}
+
+.card .body-card .name h3 {
+  font-size: 16px;
+  color: #969696;
+}
+
+.card .body-card .social {
+  min-height: 81px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card .body-card .social h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card .body-card .social h5 {
+  color: #969696;
+}
+
+.card .body-card .social > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+  -ms-flex-preferred-size: 1rem;
+      flex-basis: 1rem;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=styles.css.map */

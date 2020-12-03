@@ -1,0 +1,103 @@
+$primary: hsl(185, 75%, 39%);
+$primary-dark: hsl(229, 23%, 23%);
+$prymary-lith: hsl(227, 10%, 46%);
+$gray: hsl(0, 0%, 59%);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  background: url("images/bg-pattern-top.svg") no-repeat -25vw -81vh,
+    url("images/bg-pattern-bottom.svg") no-repeat 50vw 40vh;
+  background-color: $primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 375px) {
+    background: url("images/bg-pattern-top.svg") no-repeat -80px -80px,
+      url("images/bg-pattern-bottom.svg") no-repeat 50vw 60vh;
+    background-size: 70%, 70%;
+    background-color: $primary;
+  }
+}
+
+.card {
+  border-radius: 10px;
+  width: 350px;
+  height: 350px;
+  background-color: white;
+  .head {
+    background: url("images/bg-pattern-card.svg") no-repeat;
+    border-radius: 10px 10px 0 0;
+    height: 140px;
+    .img {
+      position: relative;
+      bottom: -85px;
+      left: 34%;
+      img {
+        border: 5px solid white;
+        border-radius: 50%;
+      }
+    }
+  }
+  .body-card {
+    min-height: 210px;
+    // padding-top: 48px;
+    display: flex;
+    flex-direction: column;
+    .name {
+      margin-top: 48px;
+      display: flex;
+      flex-direction: column;
+      min-height: 81px;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid hsl(0, 0%, 91%);
+      h2 {
+        font-size: 18px;
+        font-weight: 700;
+        strong {
+          color: $gray;
+        }
+      }
+      h3 {
+        font-size: 16px;
+        color: $gray;
+      }
+    }
+    .social {
+      min-height: 81px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      h4 {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      h5 {
+        color: $gray;
+      }
+    }
+    .social > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+  flex-basis: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
